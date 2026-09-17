@@ -50,9 +50,9 @@ To develop an intelligent system that:
 | Metric            | Value   |
 |------------------|--------|
 | Pixel Accuracy   | 96.77% |
-| Precision        | 74.78% |
-| F1 Score (Dice)  | 59.69% |
-| Mean IoU         | 42.54% |
+| Precision        | 79.78% |
+| F1 Score (Dice)  | 69.69% |
+| Mean IoU         |52.54% |
 
 ---
 
