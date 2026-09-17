@@ -1,0 +1,35 @@
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Datasets & Zip Archives
+*.zip
+*.tar
+*.gz
+GF_LowGradeRoadDataset/
+dataset/
+retraining_dataset/
+
+# Saved uploaded & generated outputs
+static/uploads/*
+!static/uploads/.gitkeep
+static/outputs/*
+!static/outputs/.gitkeep
+images/*.jpg
+images/*.png
+
+# Root temporary visual & GIS outputs
+predicted_road_*.png
+predicted_road_*.geojson
+predicted_road_*.kml
+history.txt
+
+# Virtual Environments & IDE
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+.DS_Store
