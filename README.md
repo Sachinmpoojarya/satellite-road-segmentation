@@ -1,91 +1,90 @@
-🛰️ Satellite Road Segmentation & GIS Vectorization
-🚀 Extracting Roads from Space with Deep Learning
+🚀 Satellite Road Segmentation & GIS Vectorization
+📌 Project Overview
 
-🌟 Overview
+This project focuses on extracting road networks from satellite imagery using Deep Learning and converting them into GIS-ready vector formats.
 
-This project builds an AI-powered system that automatically detects and extracts road networks from satellite imagery and converts them into GIS-ready vector formats.
+The system uses a ResNet-UNet model to detect roads from satellite images and generates outputs such as:
 
-🔍 From raw satellite images → 📍 to structured road maps → 🌍 ready for real-world use.
+Binary road masks
+GeoJSON / KML vector files
+Road statistics (length, area)
+Automated PDF reports
+🎯 Objective
 
-🎯 Key Features
+To develop an intelligent system that:
 
-✨ Deep Learning Road Detection
-
-Uses ResNet-UNet for high-quality segmentation
-
-🗺️ GIS Vector Output
-
-Converts masks into GeoJSON / KML
-
-📊 Analytics & Reporting
-
-Calculates road length & area
-Generates automated PDF reports
-
-⚡ API Ready
-
-Integrated with Flask for easy deployment
-🧠 Model Architecture
-🧩 Model: ResNet-34 based U-Net
-🎯 Loss Function: Focal Tversky Loss
-⚙️ Framework: PyTorch
-🖼️ Image Processing: OpenCV
-📊 Performance Metrics
-Metric	Score
-🟢 Pixel Accuracy	96.77%
-🔵 Precision	74.78%
-🟡 F1 Score	59.69%
-🔴 Mean IoU	42.54%
+Identifies roads from satellite images
+Converts raster outputs into vector polygons
+Provides GIS-compatible outputs for real-world applications
+🧠 Model Details
+Model: ResNet-34 based U-Net
+Loss Function: Focal Tversky Loss
+Framework: PyTorch
+Image Processing: OpenCV
 🛠️ Tech Stack
-Category	Tools
-🤖 ML / AI	PyTorch
-🌐 API	Flask
-🖼️ Image Processing	OpenCV
-🌍 GIS Processing	Shapely
-📄 Reports	ReportLab
+Frontend / API: Flask
+Backend / ML: PyTorch
+Image Processing: OpenCV
+Geospatial Processing: Shapely
+Report Generation: ReportLab
+📊 Results
+Metric	Value
+Pixel Accuracy	96.77%
+Precision	74.78%
+F1 Score (Dice)	59.69%
+Mean IoU	42.54%
 📂 Project Structure
 Satellite-Road-Segmentation/
-│── model/            # Trained model
-│── dataset/          # (Excluded from repo)
-│── app.py            # Flask API
-│── predict.py        # Prediction script
-│── utils/            # Helper functions
-│── outputs/          # Results (masks + vectors)
-│── reports/          # Generated PDFs
+│── model/                # Trained model files
+│── dataset/              # (Optional) Dataset (not included in repo)
+│── app.py                # Flask API
+│── predict.py            # Inference script
+│── utils/                # Helper functions
+│── outputs/              # Generated masks & vectors
+│── reports/              # PDF reports
 │── requirements.txt
 │── README.md
-⚙️ Setup Guide
-1️⃣ Clone Repo
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-2️⃣ Create Environment
+2️⃣ Create Virtual Environment
 conda create -n satellite python=3.10
 conda activate satellite
-3️⃣ Install Requirements
+3️⃣ Install Dependencies
 pip install -r requirements.txt
-▶️ Run the Project
-🔹 Predict Roads
+▶️ Usage
+Run Prediction
 python predict.py --image input.jpg
-🔹 Start API Server
+Run Flask App
 python app.py
-🔄 Workflow
-Satellite Image → Segmentation Model → Road Mask → Vectorization → GIS Output
-🌍 Real-World Applications
+📤 Output
 
-🏙️ Smart City Planning
-🛣️ Road Infrastructure Analysis
-🚨 Disaster Management
-🧭 Navigation Systems
-🌐 GIS Data Generation
+The system generates:
 
-📌 Important Notes
-
-⚠️ Dataset not included (large size)
-📥 Pretrained model should be downloaded separately
-
+Segmented road mask images
+GeoJSON / KML files
+Road length & area calculations
+PDF report with analysis
+🌍 Applications
+Smart city planning
+Road infrastructure monitoring
+Disaster management
+Navigation systems
+GIS data generation
+📸 Sample Workflow
+Input satellite image
+Model predicts road segmentation
+Mask converted to vector format
+GIS-ready output generated
+🔐 Notes
+Dataset is not included due to size limitations
+Pretrained model can be downloaded separately
 👨‍💻 Author
 
 Sachin M Poojar
-🎓 Computer Science Student
-🤖 Aspiring AI Engineer
-🚀 Passionate about AI & Emerging Technologies
+Computer Science Student | Aspiring AI Engineer
+
+📜 License
+
+This project is for academic and research purposes.
