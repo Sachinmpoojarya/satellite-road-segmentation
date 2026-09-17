@@ -57,3 +57,62 @@ To develop an intelligent system that:
 ---
 
 ## 📂 Project Structure  
+
+Satellite-Road-Segmentation/
+│── model/ # Trained model files
+│── dataset/ # (Not included)
+│── app.py # Flask API
+│── predict.py # Inference script
+│── utils/ # Helper functions
+│── outputs/ # Masks & vectors
+│── reports/ # PDF reports
+│── requirements.txt
+│── README.md
+
+
+
+---
+
+## ⚙️ Installation & Setup  
+
+### 1. Clone Repository  
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2. Create Environment
+conda create -n satellite python=3.10
+conda activate satellite
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+▶️ Usage
+Run Prediction
+python predict.py --image input.jpg
+Run Flask App
+python app.py
+📤 Output
+
+The system generates:
+
+Segmented road mask images
+GeoJSON / KML files
+Road length & area calculations
+PDF reports
+🌍 Applications
+Smart city planning
+Road infrastructure monitoring
+Disaster management
+Navigation systems
+GIS data generation
+🔄 Workflow
+Satellite Image → Model → Road Mask → Vectorization → GIS Output
+⚠️ Notes
+Dataset is not included due to size limitations
+Pretrained model should be downloaded separately
+👨‍💻 Author
+
+Sachin M Poojar
+Computer Science Student | Aspiring AI Engineer
